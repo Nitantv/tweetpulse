@@ -1,0 +1,65 @@
+
+name: Collect Wikipedia Data
+
+on:
+
+  schedule:
+
+    - cron: '0 * * * *'
+
+  workflow_dispatch:
+
+jobs:
+
+  collect:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout code
+
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+
+        uses: actions/setup-python@v4
+
+        with:
+
+          python-version: '3.11'
+
+      - name: Install dependencies
+
+        run: |
+
+          pip install kafka-python requests
+
+      - name: Run Wikipedia stream producer
+
+        env:
+
+          KAFKA_KEY: ${{ secrets.KAFKA_KEY }}
+
+          KAFKA_SECRET: ${{ secrets.KAFKA_SECRET }}
+
+          KAFKA_BOOTSTRAP: ${{ secrets.KAFKA_BOOTSTRAP }}
+
+        run: |
+
+          python src/python/ingestion/wikipedia_producer.py 500
+
+      - name: Run reverted edits producer
+
+        env:
+
+          KAFKA_KEY: ${{ secrets.KAFKA_KEY }}
+
+          KAFKA_SECRET: ${{ secrets.KAFKA_SECRET }}
+
+          KAFKA_BOOTSTRAP: ${{ secrets.KAFKA_BOOTSTRAP }}
+
+        run: |
+
+          python src/python/ingestion/wikipedia_reverted_producer.py 200
+
