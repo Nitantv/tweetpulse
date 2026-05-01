@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="Nitants-MacBook-Air.local" name="com.tweetpulse.MockTweetProducerSpec" tests="14" errors="0" failures="0" skipped="0" time="0.052" timestamp="2026-04-29T18:31:18">
+          <properties>
+      <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/><property name="java.specification.version" value="11"/><property name="sun.cpu.isalist" value=""/><property name="sun.jnu.encoding" value="UTF-8"/><property name="sun.arch.data.model" value="64"/><property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/><property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@11/11.0.30/libexec/openjdk.jdk/Contents/Home/lib"/><property name="sun.java.command" value="/opt/homebrew/Cellar/sbt/1.12.10/libexec/bin/sbt-launch.jar test"/><property name="jdk.debug" value="release"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="java.version.date" value="2026-01-20"/><property name="java.home" value="/opt/homebrew/Cellar/openjdk@11/11.0.30/libexec/openjdk.jdk/Contents/Home"/><property name="file.separator" value="/"/><property name="java.vm.compressedOopsMode" value="Zero based"/><property name="line.separator" value="
+"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="11.0.30+0"/><property name="user.name" value="nitantvaidya"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="java.vendor.version" value="Homebrew"/><property name="java.io.tmpdir" value="/var/folders/73/d2bm4j4n0rldblv35n6lc6q00000gn/T/"/><property name="java.version" value="11.0.30"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/><property name="sun.os.patch.level" value="unknown"/><property name="java.library.path" value="/Users/nitantvaidya/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.vendor" value="Homebrew"/><property name="java.specification.maintenance.version" value="3"/><property name="scala.ext.dirs" value="/Users/nitantvaidya/.sbt/1.0/java9-rt-ext-homebrew_11_0_30"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="gopherProxySet" value="false"/><property name="java.class.path" value="/opt/homebrew/Cellar/sbt/1.12.10/libexec/bin/sbt-launch.jar"/><property name="java.vm.vendor" value="Homebrew"/><property name="jline.shutdownhook" value="false"/><property name="user.timezone" value="Asia/Kolkata"/><property name="os.name" value="Mac OS X"/><property name="java.vm.specification.version" value="11"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="user.country" value="US"/><property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="/Users/nitantvaidya"/><property name="user.language" value="en"/><property name="sbt.script" value="/opt/homebrew/Cellar/sbt/1.12.10/libexec/bin/sbt"/><property name="sbt.ipcsocket.tmpdir" value="/var/folders/73/d2bm4j4n0rldblv35n6lc6q00000gn/T/.sbta1d7a0e3/ipcsocket"/><property name="swoval.tmpdir" value="/var/folders/73/d2bm4j4n0rldblv35n6lc6q00000gn/T/.sbta1d7a0e3/swoval"/><property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/><property name="jline.esc.timeout" value="0"/><property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="path.separator" value=":"/><property name="os.version" value="26.3.1"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/><property name="user.dir" value="/Users/nitantvaidya/tweetpulse/src/scala"/><property name="os.arch" value="aarch64"/><property name="java.vm.info" value="mixed mode"/><property name="java.vm.version" value="11.0.30+0"/><property name="java.class.version" value="55.0"/>
+    </properties>
+          <testcase classname="com.tweetpulse.MockTweetProducerSpec" name="generateTweet should produce tweet with valid id" time="0.008">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="generateTweet should produce tweet with non-empty text" time="0.002">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="generateTweet should produce tweet with valid lang Option" time="0.006">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="generateTweet should produce tweet with non-empty hashtags" time="0.0">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="generateTweet should produce tweet with positive metrics" time="0.002">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="generateTweet should produce unique tweets for different ids" time="0.0">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="toJson should produce valid JSON string" time="0.0">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="toJson should include correct tweet id in JSON" time="0.0">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="toJson should produce JSON with hashtag array" time="0.0">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="toJson should escape quotes in tweet text" time="0.0">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="buildConfig should set bootstrap servers from env" time="0.031">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="buildConfig should set SASL_SSL security protocol" time="0.001">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="buildConfig should set PLAIN sasl mechanism" time="0.001">
+                      
+                    </testcase><testcase classname="com.tweetpulse.MockTweetProducerSpec" name="buildConfig should set string serializers" time="0.001">
+                      
+                    </testcase>
+          <system-out><![CDATA[]]></system-out>
+          <system-err><![CDATA[]]></system-err>
+        </testsuite>

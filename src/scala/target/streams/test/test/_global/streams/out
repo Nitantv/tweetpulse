@@ -1,0 +1,65 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tweetpulse.MockTweetProducerSpec, org.scalatest.tools.Framework$$anon$1@2d0f3b28, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tweetpulse.TweetDomainSpec, org.scalatest.tools.Framework$$anon$1@2d0f3b28, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTweetDomainSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mA Tweet case class[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support structural equality[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support copy with modification[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle Option fields correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTweet.fromMap[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should parse valid map successfully[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Failure when required field is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should parse hashtags correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEventProcessor[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle all PipelineEvent variants[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should extract language from Option correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTweetValidator[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Right for valid tweet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Left when ID is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Left when text is too long[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTweetAnalytics[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should extract texts correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should filter by language[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should collect all hashtags via flatMap[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should sum total likes via foldLeft[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should find max likes via reduce[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return top N tweets by likes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should collect only TweetReceived events[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should zip tweets with index starting at 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should filter engaged english tweets via for comprehension[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mForComprehensions[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Some when both lang and hashtag exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None when hashtags list is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None when lang is None[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTweetOps implicits[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should correctly identify viral tweets[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate correct summary[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should convert tweet to map with correct keys[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mRichList implicits[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Some for non-empty list safeHead[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None for empty list safeHead[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMockTweetProducerSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mgenerateTweet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce tweet with valid id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce tweet with non-empty text[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce tweet with valid lang Option[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce tweet with non-empty hashtags[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce tweet with positive metrics[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce unique tweets for different ids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mtoJson[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce valid JSON string[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should include correct tweet id in JSON[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce JSON with hashtag array[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should escape quotes in tweet text[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mbuildConfig[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set bootstrap servers from env[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set SASL_SSL security protocol[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set PLAIN sasl mechanism[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set string serializers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 319 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 42[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 42, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.tweetpulse.TweetDomainSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.tweetpulse.MockTweetProducerSpec[0m

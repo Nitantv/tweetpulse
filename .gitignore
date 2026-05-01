@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+tweetpulse-env/
+
+# Credentials — never commit these
+.env
+secrets.json
+.zshrc
+
+# Databricks
+.databricks/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
