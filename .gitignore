@@ -18,3 +18,9 @@ secrets.json
 
 # Logs
 *.log
+src/scala/target/
+src/scala/project/target/
+*.jar
+*.class
+*.zip
+test_wiki.py
