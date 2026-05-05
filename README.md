@@ -111,7 +111,7 @@ The project covers 17 modules spanning data ingestion, streaming, transformation
 
 ## Project Structure
 
-\`\`\`
+```
 tweetpulse/
 ├── .github/
 │   └── workflows/
