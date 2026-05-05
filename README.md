@@ -148,7 +148,6 @@ tweetpulse/
 ├── architecture.png
 ├── docker-compose.yml
 └── README.md
-\`\`\`
 ---
 
 ## Modules
