@@ -110,11 +110,13 @@ The project covers 17 modules spanning data ingestion, streaming, transformation
 ---
 
 ## Project Structure
+
+\`\`\`
 tweetpulse/
 ├── .github/
 │   └── workflows/
-│       ├── collect_data.yml      # Runs producers every 6 hours
-│       └── test.yml              # Runs tests on every push
+│       ├── collect_data.yml                    # Runs producers every 6 hours
+│       └── test.yml                            # Runs tests on every push
 ├── src/
 │   ├── python/
 │   │   ├── ingestion/
@@ -123,18 +125,30 @@ tweetpulse/
 │   │   ├── bronze/
 │   │   ├── silver/
 │   │   ├── gold/
-│   │   └── ml/
+│   │   ├── ml/
+│   │   └── utils/
 │   └── scala/
-│       └── src/main/scala/com/tweetpulse/
-│           ├── TweetDomain.scala               # Domain models
-│           └── MockTweetProducer.scala         # Kafka producer
+│       ├── build.sbt
+│       ├── kafka.properties
+│       └── src/
+│           ├── main/scala/com/tweetpulse/
+│           │   ├── TweetDomain.scala           # Domain models (28 tests)
+│           │   └── MockTweetProducer.scala     # Kafka producer (14 tests)
+│           └── test/scala/com/tweetpulse/
+│               ├── TweetDomainSpec.scala
+│               └── MockTweetProducerSpec.scala
 ├── tests/
 │   ├── unit/
 │   └── integration/
 ├── bundles/
-│   └── databricks.yml            # Databricks Asset Bundle config
-├── .gitignore
+│   └── databricks.yml                          # Databricks Asset Bundle config
+├── infra/
+│   └── terraform/
+├── notebooks/
+├── architecture.png
+├── docker-compose.yml
 └── README.md
+\`\`\`
 ---
 
 ## Modules
